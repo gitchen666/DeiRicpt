@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#e9ede9">
+  <meta name="description" content="The DeiRicpt privacy policy explains local journal storage, sharing, exports, backups, and support email.">
+  <title>DeiRicpt Privacy Policy</title>
+  <link rel="canonical" href="https://gitchen666.github.io/DeiRicpt/">
+  <style>
+    :root {
+      color-scheme: light;
+      --desk: #e9ede9;
+      --paper: #fff;
+      --ink: #202421;
+      --secondary: #4b534c;
+      --accent: #aa3024;
+      --rule: #c9d0c9;
+      --stamp: #fff1ed;
+      --mono: "IBM Plex Mono", "Cascadia Mono", "Courier New", monospace;
+      --sans: "Source Sans 3", "Segoe UI", sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: clamp(1rem, 5vw, 4.25rem) clamp(.8rem, 4vw, 2rem);
+      background: var(--desk);
+      color: var(--ink);
+      font: 1rem/1.72 var(--sans);
+    }
+    a { color: var(--accent); text-underline-offset: .2em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: .12em; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: .23rem; }
+
+    .skip {
+      position: absolute;
+      z-index: 1;
+      top: .5rem;
+      left: .5rem;
+      padding: .5rem 1rem;
+      transform: translateY(-150%);
+      background: var(--paper);
+    }
+    .skip:focus { transform: none; }
+
+    .receipt {
+      max-width: 49rem;
+      margin-inline: auto;
+      padding-inline: clamp(1.3rem, 7vw, 4.35rem);
+      border-block: .4rem solid var(--ink);
+      background: var(--paper);
+      box-shadow: 0 1.2rem 3rem #17251915;
+    }
+
+    .heading {
+      padding-block: clamp(1.9rem, 6vw, 3.6rem) clamp(1.45rem, 4vw, 2.6rem);
+      text-align: center;
+    }
+    h1, h2, .brand, summary { font-family: var(--mono); }
+    .brand {
+      margin: 0 0 .7rem;
+      font-size: .93rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.95rem, 5.9vw, 3.75rem);
+      line-height: 1.12;
+      letter-spacing: -.075em;
+    }
+    .date {
+      display: inline-block;
+      margin: 1.2rem 0 0;
+      padding: .25rem .65rem;
+      border: 1px solid #edbdb3;
+      background: var(--stamp);
+      color: var(--accent);
+      font: 600 .85rem/1.6 var(--mono);
+    }
+
+    .contents { border-block: 1px dashed var(--rule); }
+    summary {
+      min-height: 3rem;
+      padding-block: .75rem;
+      color: var(--accent);
+      cursor: pointer;
+      font-size: .91rem;
+      font-weight: 700;
+    }
+    .contents ul {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: .15rem 1.4rem;
+      margin: 0 0 1rem;
+      padding: 0;
+      list-style: none;
+    }
+    .contents li a { display: block; padding-block: .3rem; font-size: .92rem; line-height: 1.45; }
+
+    .policy section {
+      padding-block: clamp(1.45rem, 4vw, 2.2rem);
+      scroll-margin-top: 1rem;
+    }
+    .policy section + section { border-top: 1px dashed var(--rule); }
+    .policy section:target h2 { color: var(--accent); }
+    h2 {
+      margin: 0 0 .7rem;
+      font-size: clamp(1.06rem, 2.6vw, 1.33rem);
+      line-height: 1.35;
+      letter-spacing: -.035em;
+    }
+    .policy p { margin: 0; color: var(--secondary); }
+    .policy p + p { margin-top: .85rem; }
+
+    @media (max-width: 34rem) {
+      .contents ul { grid-template-columns: minmax(0, 1fr); }
+    }
+
+    @media print {
+      body { padding: 0; background: white; }
+      .receipt { max-width: none; padding: 0; border: 0; box-shadow: none; }
+      .skip, .contents { display: none; }
+      .heading { padding-block: 0 1rem; text-align: left; }
+      .date { margin-top: .6rem; padding: 0; border: 0; background: white; }
+      .policy section { padding-block: .7rem; }
+      h2 { break-after: avoid; }
+      .policy p, a, .date { color: black; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <main class="receipt" id="main">
+    <header class="heading">
+      <p class="brand">Developer: DeiRicpt</p>
+      <h1>Privacy Policy</h1>
+      <p class="date">Effective <time datetime="2026-11-09">November 9, 2026</time></p>
+    </header>
+    <nav class="contents" aria-label="Policy sections">
+      <details>
+        <summary>On this page</summary>
+        <ul>
+          <li><a href="#who-we-are-and-what-this-covers">Who we are and what this covers</a></li>
+          <li><a href="#information-on-your-device">Information on your device</a></li>
+          <li><a href="#no-automatic-collection-or-tracking">No automatic collection or tracking</a></li>
+          <li><a href="#how-local-information-is-used">How local information is used</a></li>
+          <li><a href="#permissions-and-selected-files">Permissions and selected files</a></li>
+          <li><a href="#sharing-exports-and-system-services">Sharing, exports, and system services</a></li>
+          <li><a href="#retention-and-deletion">Retention and deletion</a></li>
+          <li><a href="#your-control-over-information">Your control over information</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#children-and-personal-information">Children and personal information</a></li>
+          <li><a href="#if-you-email-us">If you email us</a></li>
+          <li><a href="#policy-updates">Policy updates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </details>
+    </nav>
+    <article class="policy" aria-label="DeiRicpt Privacy Policy">
+      <section id="who-we-are-and-what-this-covers" aria-labelledby="who-we-are-and-what-this-covers-title">
+        <h2 id="who-we-are-and-what-this-covers-title">Who we are and what this covers</h2>
+        <p>DeiRicpt is the developer and provider named for this app. This policy describes the current iOS app and its local features. There is no app account, developer-operated server, or developer cloud sync.</p>
+      </section>
+      <section id="information-on-your-device" aria-labelledby="information-on-your-device-title">
+        <h2 id="information-on-your-device-title">Information on your device</h2>
+        <p>The app stores receipt dates, activity text and quantities, moods, takeaways, tags, theme fields, reflection prompts, routines, receipt headers and footers, paper and ink choices, and haptic preferences locally so its features work. Text you choose to enter may contain personal information. It is not uploaded to the developer as part of normal app operation. Temporary search filters, selections, and calculator inputs may remain only for the current view or session.</p>
+      </section>
+      <section id="no-automatic-collection-or-tracking" aria-labelledby="no-automatic-collection-or-tracking-title">
+        <h2 id="no-automatic-collection-or-tracking-title">No automatic collection or tracking</h2>
+        <p>DeiRicpt does not include advertising, analytics SDKs, tracking pixels, advertising identifiers, or automatic uploads of your records. We do not automatically receive your content or app usage history, and we do not sell or share it for advertising. This app does not run an in-app browser or use cookies.</p>
+      </section>
+      <section id="how-local-information-is-used" aria-labelledby="how-local-information-is-used-title">
+        <h2 id="how-local-information-is-used-title">How local information is used</h2>
+        <p>Your saved information is used on your device to show and edit your records, calculate the requested results and summaries, restore your place, and create the backups or exports you choose. The app does not use your records for advertising or developer-operated profiling.</p>
+      </section>
+      <section id="permissions-and-selected-files" aria-labelledby="permissions-and-selected-files-title">
+        <h2 id="permissions-and-selected-files-title">Permissions and selected files</h2>
+        <p>DeiRicpt does not request camera, microphone, location, contacts, or broad photo-library read access. If you choose Save Image in the system share sheet, iOS may request permission to add the generated image to Photos. You can decline or change that permission in iOS Settings and continue using journal features. Backup files are selected through the system file picker. Chosen cloud providers may transfer those files under their own settings.</p>
+      </section>
+      <section id="sharing-exports-and-system-services" aria-labelledby="sharing-exports-and-system-services-title">
+        <h2 id="sharing-exports-and-system-services-title">Sharing, exports, and system services</h2>
+        <p>Content leaves the app when you deliberately export, share, save an image, or choose another app or file provider. Those recipients process copies according to their own privacy practices. iOS device backups and diagnostic services may operate according to your Apple settings; they are separate from an in-app developer upload service. The app has no automatic developer data-sharing partner or third-party analytics service.</p>
+      </section>
+      <section id="retention-and-deletion" aria-labelledby="retention-and-deletion-title">
+        <h2 id="retention-and-deletion-title">Retention and deletion</h2>
+        <p>Delete individual receipts or routines using their in-app controls. Editing or deleting a routine does not change receipts already created from it. Deleting a source receipt does not rewrite a saved weekly recap, and deleting a journal record does not remove its previously exported image from Photos or Files. Remaining local records stay until you remove or replace them, subject to device storage and the app&#39;s documented limits. To remove the whole local app container, use Delete App in iOS Settings; Offload App can keep documents and data. Separately remove exported files, Photos images, recipient copies, and device or cloud backups where they are stored. Deleting this app cannot remove those outside copies.</p>
+      </section>
+      <section id="your-control-over-information" aria-labelledby="your-control-over-information-title">
+        <h2 id="your-control-over-information-title">Your control over information</h2>
+        <p>You can review and edit your local records and export a backup from Settings. There is no account to close or server-side journal to request from us. Because we cannot access your device-only records, we cannot inspect, correct, recover, or remotely delete them for you. You control whether to export content and which optional system permissions to grant.</p>
+      </section>
+      <section id="security" aria-labelledby="security-title">
+        <h2 id="security-title">Security</h2>
+        <p>The app uses local iOS storage, file protection, and atomic writes for its saved library. These measures do not make data loss or unauthorized access impossible. Protect your device with appropriate security settings and keep backups private. Exported JSON and images are ordinary files, not password-protected or end-to-end encrypted by this app.</p>
+      </section>
+      <section id="children-and-personal-information" aria-labelledby="children-and-personal-information-title">
+        <h2 id="children-and-personal-information-title">Children and personal information</h2>
+        <p>The app does not ask for an age, identity profile, or child account, and does not automatically collect records from children. Parents and guardians should help children avoid entering or sharing sensitive personal information. User-entered records stay subject to the same local-storage behavior described above.</p>
+      </section>
+      <section id="if-you-email-us" aria-labelledby="if-you-email-us-title">
+        <h2 id="if-you-email-us-title">If you email us</h2>
+        <p>Contact is optional. If you email <a href="mailto:zuoliming235@outlook.com">zuoliming235@outlook.com</a>, we receive your email address, message, and any attachments you choose to send through our email provider. We use that correspondence to respond to your request and provide support, not to track activity in the app or advertise to you. Please avoid sending sensitive journal content unless needed. Support correspondence is retained only as needed for the request, reasonable follow-up, or legal obligations. You may use the same address to ask about access, correction, or deletion of correspondence, subject to any applicable legal retention requirements.</p>
+      </section>
+      <section id="policy-updates" aria-labelledby="policy-updates-title">
+        <h2 id="policy-updates-title">Policy updates</h2>
+        <p>This policy is included in the app so it can be read offline. If app behavior or this policy changes, the updated policy will show a new effective date in the app. A policy update alone does not turn on tracking or upload your existing records.</p>
+      </section>
+      <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>Developer: DeiRicpt</p>
+        <p><a href="mailto:zuoliming235@outlook.com">zuoliming235@outlook.com</a></p>
+        <p>Opens your email app. Nothing is sent automatically.</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
